@@ -1,0 +1,38 @@
+-- RUNNING SQL FILES --
+
+To run from mac environment:
+
+    mysql -u root -p -t < filename.sql
+
+To run sql files from mysql client:
+
+source filepath/filename.sql;
+
+
+
+Possible Combinations of NULL and DEFAULT values:
+
+num_1... NOT NULL | DEFAULT VALUE OF 0 | TYPE = NUMBER
+
+  Upon inserting no value... value was 0
+  Upon inserting null... ERROR
+
+num_2... NOT NULL | DEFAULT VALUE OF 1 | TYPE = NUMBER
+
+  Upon inserting no value... value was 1
+  Upon inserting null... ERROR
+
+num_3... NULL | DEFAULT VALUE OF 1 | TYPE = NUMBER
+
+  Upon inserting no value... value was 1
+  Upon inserting null... value was null
+
+num_4... NOT NULL | NO DEFAULT | TYPE = NUMBER
+
+  Upon inserting no value... ERROR not allowed
+  Upon inserting null... ERROR not allowed
+
+num_5... NULL | NO DEFAULT | TYPE = NUMBER
+
+  Upon inserting no value... value is null
+  Upon inserting null... value is null

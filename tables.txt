@@ -10,7 +10,7 @@ source filepath/filename.sql;
 
 
 
-Possible Combinations of NULL and DEFAULT values:
+******Possible Combinations of NULL and DEFAULT values:
 
 num_1... NOT NULL | DEFAULT VALUE OF 0 | TYPE = NUMBER
 

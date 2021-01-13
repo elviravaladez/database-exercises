@@ -36,3 +36,19 @@ num_5... NULL | NO DEFAULT | TYPE = NUMBER
 
   Upon inserting no value... value is null
   Upon inserting null... value is null
+
+
+Creating Tables Syntax
+=======================
+CREATE TABLE table_name (
+    column1_name data_type,
+    column2_name data_type,
+    ...
+);
+
+Example:
+CREATE TABLE quotes (
+    author_first_name VARCHAR(50),
+    author_last_name  VARCHAR(100) NOT NULL,
+    content TEXT NOT NULL
+);

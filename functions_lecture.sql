@@ -50,7 +50,6 @@ SELECT UNIX_TIMESTAMP(); # 1610552593
 # For 1280512800, multiply by 1000, since java is expecting milliseconds:
 # java.util.Date time=new java.util.Date((long)timeStamp*1000);
 
-
 SELECT CONCAT(
     'Teaching people to code for ',
     UNIX_TIMESTAMP() - UNIX_TIMESTAMP('2018-12-03'),
